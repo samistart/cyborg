@@ -1,0 +1,55 @@
+.navbar-logo {
+    height: 3em;
+}
+
+.product-logo {
+    height: 1em;
+}
+
+.docs {
+    height: 3em;
+}
+
+.logo-text-light {
+    font-size: 2em;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.logo-text-pay {
+    font-size: 2em;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.list-thumbnail {
+    width: 50%;
+    height: auto;
+}
+
+.page-header {
+    padding-top: 20px;
+}
+
+.page-content-padded {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 25em;
+}
+
+.footer-padded {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.list-item-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.bottom {
+    border-bottom: 1px solid #ccc;
+}

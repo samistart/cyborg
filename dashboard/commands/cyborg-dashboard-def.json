@@ -1,0 +1,23 @@
+{
+    "containerDefinitions": [
+        {
+            "portMappings": [
+                {
+                    "hostPort": 8001,
+                    "protocol": "tcp",
+                    "containerPort": 8001
+                }
+            ],
+            "environment": [],
+            "mountPoints": [],
+            "memory": 600,
+            "volumesFrom": [],
+            "image": "452104988625.dkr.ecr.eu-west-2.amazonaws.com/cyborg-dashboard",
+            "essential": true,
+            "name": "cyborg-dashboard"
+        }
+    ],
+    "family": "cyborg-dashboard",
+    "volumes": [],
+    "placementConstraints": []
+}
