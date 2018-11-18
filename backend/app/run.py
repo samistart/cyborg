@@ -5,7 +5,6 @@ from config.config import config
 
 
 def create_app() -> Flask:
-
     app = Flask(__name__)
     app = add_config(app, config)
     app = add_cors_wrapper(app)
@@ -16,11 +15,20 @@ def create_app() -> Flask:
             'ping': 'pong',
         })
 
+    @app.route('/items/')
+    def items():
+        return jsonify({
+            'items': [
+                {'id': 1, 'name': 'Apples', 'price': '$2'},
+                {'id': 2, 'name': 'Peaches', 'price': '$5'}
+            ]
+        })
+
     return app
 
 
 def add_config(app: Flask, config: dict) -> Flask:
-    for k,v in config.items():
+    for k, v in config.items():
         app.config[k] = v
     return app
 
