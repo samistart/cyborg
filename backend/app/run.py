@@ -1,12 +1,11 @@
 from os.path import expanduser
 
-import flask, jsonify
+import flask
+from flask import jsonify, Flask
 from flask_cors import CORS
 
 from config.config import config
 from gmail_client import GmailClient
-
-
 
 
 def create_app() -> Flask:

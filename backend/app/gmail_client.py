@@ -117,7 +117,7 @@ class GmailClient:
 
         formatted_dates = [date.strftime("%y-%m-%d") for date in past_two_weeks]
 
-        pretty_dates = prettify_dates(message_dates)
+        pretty_dates = prettify_dates(past_two_weeks)
         
         daily_emails = [
             {
