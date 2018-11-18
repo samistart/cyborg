@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+docker push 452104988625.dkr.ecr.eu-west-2.amazonaws.com/cyborg-backend:latest

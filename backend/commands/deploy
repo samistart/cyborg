@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+aws ecs register-task-definition --cli-input-json file:///home/sami/projects/cyborg/backend/commands/cyborg-backend-def.json
+aws ecs update-service --cluster=light-tech --service=backend --task-definition=cyborg-backend

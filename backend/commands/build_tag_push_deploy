@@ -1,0 +1,4 @@
+./build
+./tag
+./push
+./deploy
