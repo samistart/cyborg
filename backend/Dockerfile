@@ -28,4 +28,4 @@ VOLUME /app
 EXPOSE 8000
 
 # Define default command.
-CMD ./app
+CMD ["gunicorn","run:app","-b",":8000"]
