@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
-aws ecs register-task-definition --cli-input-json file:///home/sami/projects/website/commands/cyborg-dashboard-def.json
-aws ecs update-service --cluster=lightpay --service=website --task-definition=website
+aws ecs register-task-definition --cli-input-json file:///home/sami/projects/cyborg/dashboard/commands/cyborg-dashboard-def.json
+aws ecs update-service --cluster=light-tech --service=dashboard --task-definition=cyborg-dashboard --desired-count=2
